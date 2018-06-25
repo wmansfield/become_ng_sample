@@ -32,8 +32,9 @@
     "jquery": "^3.3.1",
     "node-sass": "^4.7.2",
     "resize-observer-polyfill": "^1.4.2",
-    "rxjs": "^5.5.6",
+    "rxjs": "^5.5.11",
     "screenfull": "^3.3.1",
+    "ts-md5": "^1.2.4",
     "web-animations-js": "^2.2.5",
     "zone.js": "^0.8.17"
   },

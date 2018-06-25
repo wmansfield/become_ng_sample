@@ -13,6 +13,9 @@ import { AuthService } from './shared/auth/auth.service';
 import { AuthGuard } from './shared/auth/auth-guard.service';
 
 import * as $ from 'jquery';
+import { HavenSDK } from './shared/services/haven/haven-sdk';
+import { SessionModule } from './pages/session/session.module';
+import { HttpModule } from '@angular/http';
 
 
 
@@ -27,11 +30,14 @@ import * as $ from 'jquery';
         BrowserAnimationsModule,
         AppRoutingModule,
         SharedModule,
+        SessionModule,
+        HttpModule,
         NgbModule.forRoot()
     ],
     providers: [
         AuthService,
-        AuthGuard
+        AuthGuard,
+        HavenSDK
     ],
     bootstrap: [AppComponent]
 })
